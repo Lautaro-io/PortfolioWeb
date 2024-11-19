@@ -13,7 +13,7 @@ body{
 .navbar-nav .nav-item {
     padding-left: 30px;  
     padding-right: 30px;
-    justify-content: center ;
+
 }
 
 .nav-link:hover{
@@ -25,6 +25,7 @@ body{
     margin-bottom: 150px; 
     animation: translatorX 0.8s ease-in-out;
     display: flex;
+    flex-direction: row;
 }
 
 h3 {
@@ -51,23 +52,49 @@ h1 {
     border: solid 1px #008AAA;
     padding: 10px;
     min-width:200px ;
+    color: #008AAA;
+}
+.btn-light:hover{
+    color: #008AAA;
 }
 .image-container {
     width: 100%;            
     height: auto;            
-    object-fit: cover;      
+    object-fit: cover;   
+    text-align:center ;   
+    
     z-index: 1;
     
 }
 .square{
-    max-width:350px;
+    padding: 15px;
+    width:auto;
     height: auto;
-    padding: 20px;
-    justify-content: flex-end;
+    display: flex;
+    align-items: center;
     z-index: 0;
-    border-radius: 0 0 0 200px;
+    border-radius: 200%;
     background-color: #1e7e96;
-    transform: rotate(-2deg);  
+    /*transform: rotate(-2deg);*/  
     transition: transform 0 ease;
 }
 
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column-reverse;      
+        align-items: center;    
+        margin-top:10px ;     
+    }
+
+    .image-container {
+        margin-bottom: 20px;          
+    }
+
+    .profile-img {
+        max-width: 80%;              
+    }
+
+    .text-container {
+        text-align: center;         
+    }
+}
