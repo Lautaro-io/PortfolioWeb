@@ -27,7 +27,7 @@ body{
     margin-bottom: 50px; 
     animation: translatorX 0.8s ease-in-out;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 h3 {
@@ -110,6 +110,10 @@ footer {
         flex-direction: column-reverse;      
         align-items: center;    
         margin-top:10px ;     
+    }
+    .square{
+        margin-top: 20px;
+        border-radius: 200%;
     }
 
     .image-container {
