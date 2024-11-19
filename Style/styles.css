@@ -82,7 +82,7 @@ h1 {
     box-shadow: 1px 1px 5px 5px;
 }
 body > *:not(   footer) {
-    flex: 1;                  /* Empuja el footer hacia abajo */
+    flex: 1;                  
   }
 footer {
     display: flex;     
