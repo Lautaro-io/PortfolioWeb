@@ -1,5 +1,7 @@
 body{
     background-color: #E5E5E5;
+    display: flex;                /* Flexbox para el cuerpo completo */
+    flex-direction: column; 
 }
 
 @keyframes translatorX {
@@ -22,7 +24,7 @@ body{
 
 .about-section{
     margin-top:  100px; ;
-    margin-bottom: 150px; 
+    margin-bottom: 50px; 
     animation: translatorX 0.8s ease-in-out;
     display: flex;
     flex-direction: row;
@@ -73,12 +75,24 @@ h1 {
     display: flex;
     align-items: center;
     z-index: 0;
-    border-radius: 200%;
+    border-radius: 10px  10px  15px 200px;
     background-color: #1e7e96;
     /*transform: rotate(-2deg);*/  
     transition: transform 0 ease;
+    box-shadow: 1px 1px 5px 5px;
 }
-
+body > *:not(   footer) {
+    flex: 1;                  /* Empuja el footer hacia abajo */
+  }
+footer {
+    display: flex;     
+    justify-content: center;     
+    align-items: flex-end;        
+    height: auto;               
+    background-color: #f7f7f7;   
+    color: #333;                 
+    text-align: center;          
+  }
 @media (max-width: 768px) {
     .about-section {
         flex-direction: column-reverse;      
